@@ -84,16 +84,36 @@ add_action( 'wp_head', 'realestate_enqueue_links');
 
 	// This theme uses wp_nav_menu() in one location.
 	// регистрируем меню
-function realestate_register_nav_menus(){
+function realestate_theme_init(){
 	register_nav_menus( array(
 	  'header_nav' => 'Header menu',
 	  'footer_nav' => 'Footer menu',
 	) );
+
+	// load language directory
+	load_theme_textdomain( 'real-estate', get_template_directory() . '/languages' );
+
 	}
-	add_action('after_setup_theme', 'realestate_register_nav_menus');
+	// выводим меню
+	add_action('after_setup_theme', 'realestate_theme_init');
 
+function realestate_register_post_type_property() {
 
-// выводим меню
+	$args = [
+		'label' => esc_html__('Properties', 'realestate'),
+		'public' => true,
+		'show_in_menu' => true,
+		'menu_icon' => 'dashicons-admin-home',
+		'supports' => [	'title',
+						'editor',
+						'thumbnail',
+						'excerpt',]
+	];
+
+	register_post_type('Property', $args);
+}
+add_action('init', 'realestate_register_post_type_property');
+
 
 
 
@@ -122,7 +142,7 @@ function real_estate_setup() {
 		* If you're building a theme based on Real Estate, use a find and replace
 		* to change 'real-estate' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'real-estate', get_template_directory() . '/languages' );
+	
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
