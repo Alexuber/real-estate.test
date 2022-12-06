@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RealEstate 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2022-10-30 18:24+0200\n"
-"PO-Revision-Date: 2022-10-30 18:25+0200\n"
+"POT-Creation-Date: 2022-11-02 16:18+0200\n"
+"PO-Revision-Date: 2022-11-02 16:28+0200\n"
 "Last-Translator: \n"
 "Language-Team: Alex <LL@li.org>\n"
 "Language: ru\n"
@@ -23,59 +23,136 @@ msgstr ""
 #: 404.php:48
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Попробуйте посмотреть в ежемесячных архивах. %1$s"
 
 #: comments.php:35
 #, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Один комментарий для &ldquo;%1$s&rdquo;"
+
+#: functions.php:107
+msgid "Search Cities"
+msgstr "Искать города"
+
+#: functions.php:108
+msgid "All Cities"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:109
+msgid "Parent City"
+msgstr "Выбрать город"
+
+#: functions.php:110
+msgid "Parent City:"
+msgstr "Выбрать город"
+
+#: functions.php:111
+msgid "Edit City"
+msgstr "Изменить город"
+
+#: functions.php:112
+msgid "Update City"
+msgstr "Обновить город"
+
+#: functions.php:113
+msgid "Add New City"
+msgstr "Добавить новый город"
+
+#: functions.php:114
+msgid "New City Name"
+msgstr "Новое название города"
+
+#: functions.php:115
+msgid "Cities"
+msgstr "Города"
+
+#: functions.php:135
+msgid "Search Features"
+msgstr "Искать результаты"
+
+#: functions.php:136
+msgid "All Features"
+msgstr "Все результаты"
+
+#: functions.php:137
+msgid "Parent Feature"
+msgstr "Выбрать результаты"
+
+#: functions.php:138
+msgid "Parent Feature:"
+msgstr "Выбрать результаты:"
+
+#: functions.php:139
+msgid "Edit Feature"
+msgstr "Изменить результат"
+
+#: functions.php:140
+msgid "Update Feature"
+msgstr "Обновить результат"
+
+#: functions.php:141
+msgid "Add New Feature"
+msgstr "Добавить новый результат"
+
+#: functions.php:142
+msgid "New Feature Name"
+msgstr "новое имя результата"
+
+#: functions.php:143
+msgid "Features"
+msgstr "Результаты"
+
+#: functions.php:159
+msgid "Properties"
+msgstr "Обьекты"
+
+#: functions.php:297
 msgid "Sidebar"
-msgstr ""
+msgstr "Боковое меню"
 
-#: functions.php:222
+#: functions.php:299
 msgid "Add widgets here."
-msgstr ""
+msgstr "добавить виджеты здесь"
 
 #: inc/template-tags.php:63
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: inc/template-tags.php:66
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Опубликовано в %1$s"
 
 #: inc/template-tags.php:73
 #, php-format
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Добавлено тэг %1$s"
 
 #: inc/template-tags.php:83
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
+"Оставьте комментарий<span class=\"screen-reader-text\"> on %s</span>"
 
 #: inc/template-tags.php:100 template-parts/content-page.php:39
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Изменить <span class=\"screen-reader-text\">%s</span>"
 
 #: search.php:21
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Искать результаты для: %s"
 
 #: single.php:23
 msgid "Previous:"
-msgstr ""
+msgstr "Предыдущая:"
 
 #: single.php:24
 msgid "Next:"
-msgstr ""
+msgstr "Следующая:"
 
-#: template-homepage.php:37
+#: template-homepage.php:38
 msgid "Select your city"
 msgstr "Выберите Ваш город"
 
@@ -84,12 +161,13 @@ msgstr "Выберите Ваш город"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начните здесь</a>."
 
 #: template-parts/content-page.php:25 template-parts/content.php:53
 msgid "Pages:"
-msgstr ""
+msgstr "Страницы:"
 
 #: template-parts/content.php:40
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Продолжить чтение<span class=\"screen-reader-text\"> \"%s\"</span>"
